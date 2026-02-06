@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sample Notes App</title>
+			<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+	<style type="text/css">
+	
+	
+	* {
+	font-family: 'Avenir Next';
+	}
+	h1 {
+	text-align: center; 
+	font-family: 'Avenir Next';
+	}
+	.notebox {
+	width: 99%;
+	height: 100px; 
+	border: 1px solid #B8B6B5; 
+	margin: 5px 2px; 
+	border-radius: 10px; 
+	padding: 5px; 
+	}
+	#new-note {
+		float: right;
+		margin: 10px 10px 10px 10px;
+		}
+		a {
+		color: white;
+		}
+	</style>
+	</head>
+	<body>
+	<!-- Use Jinja templating to display the notes --> 
+	<h1 class="title is-1"> Notes </h1>
+	<br>
+	<button id="new-note" class="button is-info"><a href=" {{ url_for('editor') }} ">New Note</a></button>
+	<br> <br> <br>
+	{% for note_file_name, note_content in noteitems %}
+	<br>
+	<div class="notebox">
+	{{ note_file_names }}
+	{{ note_content }}
+
+	</div>
+
+	<button type="submit" class="button is-info">
+	<a href="{{ url_for('edit_note', title=note_file_name, note=note_content) }}"> Edit Note </a> </button>
+	<button type="submit" class="button is-danger">
+	<a href="{{ url_for('delete_note', title=note_file_name, note=note_content) }}"> Delete Note </a> </button>
+	<br>
+	</form>
+	{% endfor %}
+	</body>
+</html>
+

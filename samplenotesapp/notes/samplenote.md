@@ -1,0 +1,3 @@
+This is a sample note used for showcase.
+Lorem Ipsum.
+Testing 1...2...3...
