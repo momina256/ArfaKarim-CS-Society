@@ -14,7 +14,7 @@ Here are detailed instructions for how to contribute (adapted from https://githu
 7. Do a `cd ArfaKarim-CS-Society`
 8. Create a new branch with your project name, e.g `git checkout -b mycoolproject`
 9. Now just simply copy out your file(s)/project(s) you created to this folder. If you followed these instructions in a new terminal (not on a previous one you used for following the SSH tutorial), the ArfaKarim-CS-Society directory should be in $HOME folder (or /Users/<user>/ in Windows maybe).
-9. Do a `git push -uf <your branch name> origin` and the code should be pushed alright
+9. Do a `git push -uf origin <your branch name which was mycoolproject>` and the code should be pushed alright
 10. Come back to your fork on your browser and click on the green button "Compare and pull". Your code would be send now to be reviewed. Add a descriptive message as you wish.
 11. If there are any problems, feel free to open up an issue! You can head over to this repository page (not your fork) and click on the issues tab and create one detailing what can be improved in this guide or the repo overall or if there is any problem you faced. We welcome your suggestions!
 
